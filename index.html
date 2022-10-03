@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="NL" dir="ltr">
 <!-- Sascha Davidson -->
+
 <head>
   <meta charset="utf-8">
   <meta name="keywords" content="wcaw" />
@@ -8,86 +9,61 @@
   <meta name="author" content="Sascha Davidson" />
   <link rel="stylesheet" href="styles/styles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <title>the client case</title>
 </head>
 
 <body>
-    <header>
-        <img src="assets/header-img-2.png" alt="Simply Easy Learning">
-    </header>
 
-    <main>
-        <section class="title">
-            <span class="date">maandag 12 juli 2021</span>
-            <h1>A, AA, AAA voorbeeldwebsite's </h1>
-            <span class="authur">Sascha Davidson</span>
-        </section>
-        <section class="container">
-            <section class="introduction">
-                <p>filter</p>
-                <p>Ga met deze links snel naar de gezochte principe</p>
-                <ul class="ul-items">
-                    <li><a href="#">Principe 1: Waarneembaar</a></li>
-                    <li><a href="#">Principe 2: Bedienbaar</a></li>
-                    <li><a href="#">Principe 3: Begrijpelijk</a></li>
-                    <li><a href="#">Principe 4: Robuust</a></li>
-                  </ul>
-            </section>
+  <header>
+    <section class="nav__bar">
+      <a href="#"><img class="logo" src="assets/Logo-vervoerregio-amsterdam-small.png" alt="logo"></a>
+      <nav>
+        <ul class="nav__links">
+          <li><a href="#">wat gebeurt er</a></li>
+          <li><a href="#">Wat doen wij?</a></li>
+          <li><a href="#">Wie zijn wij?</a></li>
+        </ul>
+
+      </nav>
+
+    </section>
+    <div class="wrapper">
+
+      <div class="button"><a href="https://www.facebook.com/vervoerregio">
+          <div class="icon">
+            <i class="fab fa-facebook-f"></i>
+          </div>
+          <span>Facebook</span>
+      </div></a>
+
+      <div class="button"><a href="https://twitter.com/vervoerregio">
+          <div class="icon">
+            <i class="fab fa-twitter"></i>
+          </div>
+          <span>Twitter</span>
+      </div></a>
+
+      <div class="button"><a href="https://www.facebook.com/vervoerregio">
+          <div class="icon">
+            <i class="fab fa-instagram"></i>
+          </div>
+          <span>Instagram</span>
+      </div></a>
 
 
-            <section class="Principe-1">
-                <h2>Principe 1. Waarneembaar</h2>
-                <h3>Richtlijn 1.1 Tekstalternatieven</h3>
-                    <section class="dropdown">
-                     <button class="accordion">1.1.1 Niet-tekstuele content</button>
-                     <div class="panel">
-                     <p>Niveau A
+    </div>
+  </header>
 
-                        Alle niet-tekstuele content die aan de gebruiker wordt gepresenteerd, heeft een tekstalternatief dat een gelijkwaardig doel dient, behalve voor de hierna vermelde situaties.            </div>
-                </section>
+  <main>
+    <section class="intro">
+      <p>test werkt niet</p>
+    </section>
+  </main>
 
-                <h3>Richtlijn 1.2 Op tijd gebaseerde media</h3>
-                    <section class="dropdown">
-                     <button class="accordion">1.2.1 Louter-geluid en louter-videobeeld (vooraf opgenomen)</button>
-                     <div class="panel">
-                     <p>Niveau A
 
-                        Voor media met vooraf opgenomen louter-geluid en vooraf opgenomen louter-videobeeld is het volgende waar, behalve als de audio of video een media-alternatief voor tekst is en duidelijk als zodanig is gelabeld:
-            </section>
 
-            <section class="dropdown">
-                <button class="accordion">1.2.2 Ondertitels voor doven en slechthorenden (vooraf opgenomen)</button>
-                <div class="panel">
-                <p>Niveau A
-
-                    Er worden ondertitels voor doven en slechthorenden geleverd voor alle vooraf opgenomen audiocontent in gesynchroniseerde media, behalve als het mediabestand een media-alternatief voor tekst is en duidelijk als zodanig is gelabeld.
-       </section>
-            </section>
-            <section class="principe 2">
-            
-            </section>
-            <section class="principe 3">
-            
-            </section>
-         </section>
-    </main>
-
-    <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-        
-        for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-              panel.style.display = "none";
-            } else {
-              panel.style.display = "block";
-            }
-          });
-        }
-        </script>
+  <script src="scripts/script.js" charset="utf-8"></script>
 </body>
 
 </html>

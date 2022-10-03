@@ -1,118 +1,174 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  overflow-x: hidden;
+
 }
 
 body {
-  width: 100vw;
-  margin-top: 15px;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+header {
+  background-color: black;
+  background-image: url("../assets/header.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 65vh;
+  float: left;
+  width: 80vw;
+  float: left;
+
+}
+
+.nav__bar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 5%;
+  background-color: #fff;
+}
+
+nav{
+text-align: right;
+}
+
+.social__media{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -30px;
+  padding: 0px 5%;
+
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+}
+
+.nav__links a,
+.overlay__content a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+}
+
+.nav__links li {
+  padding: 0px 10px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #0088a9;
+}
+
+header section a, .logo {
+  margin-right: auto;
+  width: 17rem;
+}
 
 
+
+.wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -20px;
+  padding: 0px 5%;
   
 }
 
-
-header{
-width: 80vw;
-margin-bottom: 60px;
+.wrapper .button{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
 }
-
-h1{
-  font-size: 2.8rem;
-    line-height: 1.125;
-    padding: 0.33rem 0 1rem;
-
-    color: #b9005f;
-
-    font-weight: 700;
-    margin: 0;
+.wrapper .button:hover{
+  width: 160px;
 }
-
-h2 {
-  font-weight: 600;
-  font-size: 30px;
-  margin-bottom: 10px;
-
+.wrapper .button .icon{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 40px;
+  transition: all 0.3s ease-out;
 }
-
-h3 {
-
-  font-weight: 600;
+.wrapper .button:nth-child(1):hover .icon{
+  background: #4267B2;
+}
+.wrapper .button:nth-child(2):hover .icon{
+  background: #1DA1F2;
+}
+.wrapper .button:nth-child(3):hover .icon{
+  background: #E1306C;
+}
+.wrapper .button:nth-child(4):hover .icon{
+  background: #333;
+}
+.wrapper .button:nth-child(5):hover .icon{
+  background: #ff0000;
+}
+.wrapper .button .icon i{
+  font-size: 25px;
+  line-height: 40px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i{
+  color: #fff;
+}
+.wrapper .button span{
+  font-family: 'barlow';
   font-size: 20px;
-  margin-bottom: 10px;
+  font-weight: 500;
+  line-height: 40px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) span{
+  color: #4267B2;
+}
+.wrapper .button:nth-child(2) span{
+  color: #1DA1F2;
+}
+.wrapper .button:nth-child(3) span{
+  color: #E1306C;
+}
+.wrapper .button:nth-child(4) span{
+  color: #333;
+}
+.wrapper .button:nth-child(5) span{
+  color: #ff0000;
 }
 
-span{
-  font-weight: 100;
-
+.wrapper .button a{
+  outline: none;
+  text-decoration: none;
+  color: #b9005f;
 }
 
-p{
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-ul.a {
-  list-style-type: circle;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
 
 main{
-  font-family: 'Avenir LT W01_45 Book1475508', arial, sans-serif;
-  font-weight: 700;
-  font-size: 17px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-
-}
-
-.title{
   width: 80vw;
-  padding-bottom: 40px;
-  
-
 }
 
-.container{
-  width: 550px;
-}
-
-.introduction{
-margin-bottom: 40px;
-}
-
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-}
-
-.active, .accordion:hover {
-  background-color: #ccc; 
-}
-
-.panel {
-  padding: 0 18px;
-  display: none;
-  background-color: white;
-  overflow: hidden;
+.intro{
+  width: 20px 5%;
 }
