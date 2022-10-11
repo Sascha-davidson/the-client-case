@@ -1,15 +1,14 @@
+// Fetch all details element
+const details = Array.from(document.querySelectorAll("details"));
 
-  var acc = document.getElementsByClassName("accordion");
-  var i;
-  
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var panel = this.nextElementSibling;
-      if (panel.style.display === "block") {
-        panel.style.display = "none";
-      } else {
-        panel.style.display = "block";
+// Add onclick listeners
+details.forEach(targetDetail => {
+  targetDetail.addEventListener("click", () => {
+    // Close all details that are not targetDetail
+    details.forEach(detail => {
+      if (detail !== targetDetail) {
+        detail.removeAttribute("open");
       }
     });
-  }
+  });
+});

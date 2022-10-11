@@ -8,10 +8,8 @@
 }
 
 body {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background-color: #fff;
+  font-size: 1.2rem;
+  font-family: 'barlow';
 }
 
 header {
@@ -19,7 +17,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 65vh;
+  height: 55vh;
   float: left;
   width: 100%;
 
@@ -171,7 +169,9 @@ header section a, .logo {
 }
 
 
-main{
+main{  display: flex;
+  align-items: center;
+  flex-direction: column;
   width: 70vw;
   padding: 3rem 0rem;
 }
@@ -185,19 +185,75 @@ p{
   font-family: 'barlow' arial;
 }
 
-.intro, .principe{
+.intro, .principe, .ankerpoint{
   margin-bottom: 3rem;
 }
 
-details > summary {
-  background-color: #b9005f;
-  cursor: pointer;
-  padding: .5rem 1rem;
-  height: 4rem;
-  display: flex;
-  align-items: center;
-  line-height: 0.9rem;
 
+
+/* details summery */
+
+details {
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  background-color: #F1F4F9;
+}
+
+details [open] {
+  padding-bottom: 20px;
+}
+
+details > summary {
+  background-color: #B9005F;
+  color: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+details[open] > summary {
+  background-color: #B9005F;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px 10px 0 0;
+}
+
+details summary h3{
+  font-size: 1.2rem;
+}
+
+
+/* details content */
+.detail-list{
+  padding: .5rem 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.img-detail-list{
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.detail-button{
+  width: auto;
+  padding: 1rem;
+  margin: 1rem 1rem 0 0;
+  background-color: #b9005f;
+  border: none;
+  font-size: 1.2rem;
+  font-family: 'barlow';
+  color: #fff;
+  cursor: pointer;
+
+}
+
+.ankerpoint li {
+  margin: 1rem 0;
+  list-style-position: inside;
+}
+
+.detail-list li {
+  margin: 1rem 0;
 }
 
 details > summary > * {
@@ -212,10 +268,10 @@ details > summary > * {
 input{
   width: 40px; height: 40px;
   transition: box-shadow .3s;
-  background: lightgrey;
+  background: #fff;
   cursor: pointer;
   border: 0;
   appearance: none; -webkit-appearance: none; 
  }
 
-input:checked{ box-shadow: inset 0 0 0 20px blue; }
+input:checked{ box-shadow: inset 0 0 0 20px rgb(53, 253, 53); }
