@@ -23,19 +23,37 @@ Als organisatie wil ik een overzicht van toegankelijkheidsverbeteringen kunnen b
 <br>
 
 ![image](https://user-images.githubusercontent.com/112861160/195828890-f92b2e9a-b3d8-432b-ae12-80fa1260ecaa.png)
-<br>
+<BR><BR><BR><BR><BR><BR>
+Resesign website
+<BR><BR>
+![image](https://user-images.githubusercontent.com/112861160/199513951-5c0788af-d775-41d9-aed1-1c6377994fc7.png)
+![image](https://user-images.githubusercontent.com/112861160/199514024-b82eefb4-635d-4462-b622-e9889fc8ffe0.png)
+![image](https://user-images.githubusercontent.com/112861160/199514064-e9c3bd6b-cdd5-4d42-89dc-71d50b7b7fa1.png)
+![image](https://user-images.githubusercontent.com/112861160/199514092-4d0b4f32-584d-4aa9-a80a-71cbe135bca6.png)
+
+<BR><BR>
 <!-- Voeg een link toe naar Github Pages 🌐-->https://sascha-davidson.github.io/the-client-case/
+<BR><BR>
 
 ## Kenmerken
 Kenmerken in mijn code die ik gebruikt heb zijn<br>
+Position absolute + position reletive<br>
 Details + summery<br>
-input = checkbox<br>
-sociam media button die hover vertelt wat voor social media het is.<br>
+Input = checkbox<br>
+Sociam media button die hover vertelt wat voor social media het is.<br>
+Input = contactform<br>
+shape devider<br>
 
 ## Bronnen
-https://wcag.nl/kennis/richtlijnen/wcag-2-1-richtlijnen/#begrijpelijk
-https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-## Licentie
+<!-- Voeg een link toe naar Github Pages 🌐-->https://wcag.nl/kennis/richtlijnen/wcag-2-1-richtlijnen/#begrijpelijk
+<br>
+<!-- Voeg een link toe naar Github Pages 🌐-->https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+<br>
+<!-- Voeg een link toe naar Github Pages 🌐-->https://stackoverflow.com/
+<br>
+
+<br><br><br><br><br><br>
+Licentie
 
 ![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
 
