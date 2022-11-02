@@ -24,7 +24,7 @@ Als organisatie wil ik een overzicht van toegankelijkheidsverbeteringen kunnen b
 
 ![image](https://user-images.githubusercontent.com/112861160/195828890-f92b2e9a-b3d8-432b-ae12-80fa1260ecaa.png)
 <BR><BR><BR><BR><BR><BR>
-Resesign website
+Re-design website
 <BR><BR>
 ![image](https://user-images.githubusercontent.com/112861160/199513951-5c0788af-d775-41d9-aed1-1c6377994fc7.png)
 ![image](https://user-images.githubusercontent.com/112861160/199514024-b82eefb4-635d-4462-b622-e9889fc8ffe0.png)
