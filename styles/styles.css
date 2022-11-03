@@ -5,8 +5,6 @@
 * {
   margin: 0;
   padding: 0;
-  line-height: 1.4;
-
 }
 
 body {
@@ -18,12 +16,14 @@ body {
 h1 {
   font-size: 3.5rem;
   font-weight: 400;
-  display: inline-block
+  display: inline-block;
 }
 
 strong{
   font-size: 7rem;
   font-weight: 700;
+
+  
 }
 
 h2 {
@@ -68,45 +68,30 @@ header {
 
 /* nev bar*/
 
-.header-nav-bar {
+nav {
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 1.4rem;
 }
 
-.header-nav {
+.main-nav {
   list-style: none;
   display: flex;
   gap: 1.2rem; 
   position: relative;
 }
 
-.header-nav a {
+.main-nav a {
   color: black;
   text-decoration: none;
   font-size: 1.1rem;
 }
 
 
-.header-nav a:hover {
+.main-nav a:hover {
   color: #b9005f;
 }
-
-.dropdown-nav {
-  list-style: none;
-}
-
-.header-nav ul ul{
-  position: absolute;
-  top: 70px;
-}
-
-.header-nav ul ul li{
-  position: relative;
-
-}
-
 
 /* social media */
 
@@ -129,11 +114,11 @@ header {
   transition: all 0.3s ease-out;
 }
 
-.header-nav-bar .button:hover {
+.socialmedias-button .button:hover, .button:focus {
   width: 160px;
 }
 
-.header-nav-bar .button .icon {
+.socialmedias-button .button .icon {
   display: inline-block;
   height: 40px;
   width: 40px;
@@ -144,64 +129,64 @@ header {
   transition: all 0.3s ease-out;
 }
 
-.header-nav-bar .button:nth-child(1):hover .icon {
+.socialmedias-button .button:nth-child(1):hover .icon {
   background: #4267B2;
 }
 
-.header-nav-bar .button:nth-child(2):hover .icon {
+.socialmedias-button .button:nth-child(2):hover .icon {
   background: #1DA1F2;
 }
 
-.header-nav-bar .button:nth-child(3):hover .icon {
+.socialmedias-button .button:nth-child(3):hover .icon {
   background: #E1306C;
 }
 
-.header-nav-bar .button:nth-child(4):hover .icon {
+.socialmedias-button .button:nth-child(4):hover .icon {
   background: #0e76a8 ;
 }
 
-.header-nav-bar .button:nth-child(5):hover .icon {
+.socialmedias-button .button:nth-child(5):hover .icon {
   background: #333;
 }
 
-.header-nav-bar .button .icon i {
+.socialmedias-button .button .icon i {
   font-size: 20px;
   line-height: 40px;
   transition: all 0.3s ease-out;
 }
 
-.header-nav-bar .button:hover .icon i{
+.socialmedias-button .button:hover .icon i{
   color: #fff;
 }
 
-.header-nav-bar .button span {
+.socialmedias-button .button span {
   font-size: 1.1rem;
   font-weight: 600;
   margin-left: 10px;
   transition: all 0.3s ease-out;
 }
 
-.header-nav-bar .button:nth-child(1) span {
+.socialmedias-button .button:nth-child(1) span {
   color: #4267B2;
 }
 
-.header-nav-bar .button:nth-child(2) span {
+.socialmedias-button .button:nth-child(2) span {
   color: #1DA1F2;
 }
 
-.header-nav-bar .button:nth-child(3) span {
+.socialmedias-button .button:nth-child(3) span {
   color: #E1306C;
 }
 
-.header-nav-bar .button:nth-child(4) span {
+.socialmedias-button .button:nth-child(4) span {
   color: #0e76a8 ;
 }
 
-.header-nav-bar .button:nth-child(5) span {
+.socialmedias-button .button:nth-child(5) span {
   color: #333;
 }
 
-.header-nav-bar .button a{
+.socialmedias-button .button{
   text-decoration: none;
   color: #b9005f;
 }
@@ -213,21 +198,13 @@ header {
   height: 38rem;
   position: relative;
   display: flex;
+  z-index: 1;
   align-items: center;
   margin-top: -3.3rem;
   background: rgb(185,0,95);
   background: linear-gradient(332deg, rgba(185,0,95,1) 0%, rgba(227,0,89,1) 100%);
 }
 
-.header-style-second{
-  width: 100%;
-  height: 15vh;
-  position: relative;
-
-  margin-top: -3.3rem;
-  background: rgb(185,0,95);
-  background: linear-gradient(332deg, rgba(185,0,95,1) 0%, rgba(227,0,89,1) 100%);
-}
 
 .vervoerregio-path-box{
   width: 100%;
@@ -261,6 +238,7 @@ header {
 .header-style-content{
   padding: 0rem 10%;
   display: flex;
+  align-items: center;
 }
 
 .header-style-title{
@@ -298,7 +276,28 @@ header {
   
 }
 
+/* second header*/
+
+.header-style-second{
+  width: 100%;
+  height: 5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 3rem;
+
+  margin-top: -3.3rem;
+  background: rgb(185,0,95);
+  background: linear-gradient(332deg, rgba(185,0,95,1) 0%, rgba(227,0,89,1) 100%);
+}
+
 /* crumb */
+
+.breadcrumbs{
+  margin: 0rem 10%;
+
+}
+
 ul.crumb li {
   margin: 2rem 0;
   display: inline;
@@ -339,6 +338,9 @@ main {
   width: 100%;
   height: auto;
   margin: 3rem 0;
+  color: black;
+  text-decoration: none;
+
   padding: 2rem;
   box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
@@ -364,6 +366,8 @@ main {
   display: flex;
   align-items: center;
   gap: 2.5rem;
+  color: black;
+  text-decoration: none;
 
   margin: 3rem 0;
   padding: 2rem;
