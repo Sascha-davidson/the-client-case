@@ -129,23 +129,28 @@ nav {
   transition: all 0.3s ease-out;
 }
 
-.socialmedias-button .button:nth-child(1):hover .icon {
+.socialmedias-button .button:nth-child(1):hover .icon, 
+.socialmedias-button .button:nth-child(1):focus .icon {
   background: #4267B2;
 }
 
-.socialmedias-button .button:nth-child(2):hover .icon {
+.socialmedias-button .button:nth-child(2):hover .icon, 
+.socialmedias-button .button:nth-child(2):focus .icon {
   background: #1DA1F2;
 }
 
-.socialmedias-button .button:nth-child(3):hover .icon {
+.socialmedias-button .button:nth-child(3):hover .icon,
+.socialmedias-button .button:nth-child(3):focus .icon {
   background: #E1306C;
 }
 
-.socialmedias-button .button:nth-child(4):hover .icon {
+.socialmedias-button .button:nth-child(4):hover .icon,
+.socialmedias-button .button:nth-child(4):focus .icon {
   background: #0e76a8 ;
 }
 
-.socialmedias-button .button:nth-child(5):hover .icon {
+.socialmedias-button .button:nth-child(5):hover .icon,
+.socialmedias-button .button:nth-child(5):focus .icon {
   background: #333;
 }
 
@@ -155,7 +160,7 @@ nav {
   transition: all 0.3s ease-out;
 }
 
-.socialmedias-button .button:hover .icon i{
+.socialmedias-button .button:hover .icon i, .socialmedias-button .button:focus .icon i{
   color: #fff;
 }
 
