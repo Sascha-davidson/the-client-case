@@ -34,6 +34,10 @@
         </li>
       </ul>
 
+      <a href="#" class="nav-button">
+        Menu
+       </a>
+
       <div class="socialmedias-button">
 
         <a href="https://www.facebook.com/vervoerregio" class="button">
@@ -74,7 +78,11 @@
 
 
       </div>
+
+
     </nav>
+
+
   </header>
 
   <div class="header-style">
@@ -114,17 +122,17 @@
       <div class="informatie">
 
         <a href="kennisbank.html" class="informatie-box">
-          <img src="assets/illustraties/Kennisbank.svg" alt="Kennisbank">
+          <img src="assets/illustraties/Kennisbank.svg" aria-hidden="true" alt="Kennisbank">
           <h3>Kennisbank</h3>
         </a>
 
         <a href="#" class="informatie-box">
-          <img src="assets/illustraties/Wet-en-regelgeving.svg" alt="regelgeving">
+          <img src="assets/illustraties/Wet-en-regelgeving.svg" aria-hidden="true" alt="regelgeving">
           <h3>Wet- en regelgeving</h3>
         </a>
 
         <a href="#" class="informatie-box">
-          <img src="assets/illustraties/Richtlijnen.svg" alt="Richtlijnen">
+          <img src="assets/illustraties/Richtlijnen.svg" aria-hidden="true" alt="Richtlijnen">
           <h3>Richtlijnen</h3>
         </a>
       </div>
@@ -180,13 +188,13 @@
         <h4>Verstuur een bericht</h4>
         <form action="/action_page.php">
           <div class="footer-naam-form">
-            <div><input type="text" id="fname" name="firstname" placeholder="Voornaam"></div>
+            <div><label>Voornaam</label><input type="text" id="fname" name="firstname" placeholder="Sascha"></div>
 
-            <div><input type="text" id="lname" name="lastname" placeholder="achternaam"></div>
+            <div><label>achternaam</label><input type="text" id="lname" name="lastname" placeholder="Davidson"></div>
           </div>
-          <input type="email" id="mail" name="email" placeholder="E-mail">
+          <label>emain</label><input type="email" id="mail" name="email" placeholder="info@vervoer.com">
 
-          <textarea placeholder="Bericht"></textarea>
+          <label>Bericht</label><textarea placeholder="Berijk ons met al je vragen"></textarea>
 
           <input type="submit" value="Submit">
 
