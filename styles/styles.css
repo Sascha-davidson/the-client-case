@@ -14,26 +14,28 @@ body {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 2rem;
   font-weight: 400;
   display: inline-block;
 }
 
 strong{
-  font-size: 7rem;
+  font-size: 3rem;
   font-weight: 700;
 
   
 }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: 2rem;
   font-weight: 400;
 }
 
 h3 {
   font-size: 1.6rem;
   font-weight: 500;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 h4 {
@@ -43,17 +45,73 @@ h4 {
 
 
 p {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
+@media screen and (min-width: 500px){
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    display: inline-block;
+  }
+  
+  strong{
+    font-size: 5rem;
+    font-weight: 700;
+  
+    
+  }
+  
+  h2 {
+    font-size: 3rem;
+    font-weight: 400;
+  }
+
+  h3 {
+    font-size: 2.3rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    display: inline-block;
+  }
+  
+  strong{
+    font-size: 7rem;
+    font-weight: 700;
+  
+    
+  }
+  
+  h2 {
+    font-size: 3.5rem;
+    font-weight: 400;
+  }
+
+  h3 {
+    font-size: 2.7rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+}
+
+
+
 /* Header */
+
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0rem 5%;
-  padding-top: 1rem;
+  padding: 1rem 5%;
 }
 
 .site-identity{
@@ -61,31 +119,138 @@ header {
 }
 
 .site-identity img {
-  width: 20rem;
+  width: 10rem;
   margin-top: 0rem;
-  padding-right: 3rem;
 }
 
-/* nev bar*/
+@media screen and (min-width: 630px){
 
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+.site-identity img {
+  width: 15rem;
+}
+
+}
+
+@media screen and (min-width: 1000px){
+
+  header {
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .site-identity img {
+    width: 20rem;
+  }
+  }
+
+
+/* burger*/
+
+.burger{
+  display: none;
+}
+
+@media screen and (max-width: 630px){
+
+.burger {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 2;
+
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.nav-items {
+  right: 0;
+  height: 30vh;
+  top: 70px;
+  justify-content: space-around;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in;
+
+  grid-gap: 0px;
+}
+
+.nav-items a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: 600;
+  font-size: 30px;
+  margin-left: 15%;
+}
+
+@keyframes navlinkfade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.toggle .line1 {
+transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+opacity: 0;
+}
+
+.toggle .line3 {
+transform: rotate(45deg) translate(-5px, -6px);
+}
+}
+
+/* nev bar */
+
+nav{
+  display: none;
+}
+
+@media screen and (min-width: 630px){
+  
 nav {
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
+  width: 100%;
   gap: 1.4rem;
 }
 
 .main-nav {
   list-style: none;
   display: flex;
-  gap: 1.2rem; 
-  position: relative;
+  justify-content: space-between;
+  margin-top: 1.5rem;
 }
 
 .main-nav a {
   color: black;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 
@@ -102,7 +267,19 @@ nav .nav-button {
   display: none;
 
 }
+}
 
+@media screen and (min-width: 1000px){
+
+  .main-nav {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.2rem;
+    margin: 0 1rem;
+  }
+
+}
 
 /* social media */
 
@@ -211,20 +388,20 @@ nav .nav-button {
 
 .header-style {
   width: 100%;
-  height: 39rem;
+  height: auto;
+  padding-bottom: 5rem;
   position: relative;
   padding-top: 3rem;
-  display: flex;
   z-index: 1;
-  align-items: center;
-  margin-top: -3.3rem;
+  color: #fff;
   background: rgb(185,0,95);
   background: linear-gradient(332deg, rgba(185,0,95,1) 0%, rgba(227,0,89,1) 100%);
 }
 
-
+/* volgende drie zijn de curve van huistyle*/
 .vervoerregio-path-box{
   width: 100%;
+  height: 30px;
   position: absolute;
   display: flex;
   top: 0;
@@ -233,36 +410,31 @@ nav .nav-button {
 
 .responsive-width{
   width: 5%;
-  height: 3rem;
+  height: 100%;
   background-color: #fff;
 }
 
 .logo-width{
-  width: 20rem;
-  height: 3rem;
+  width: 7rem;
+  height: 100%;
   background-color: #fff;
 }
 
-.vervoerregio-path{
-  width: 6rem;
-  height: 3rem;
-  background-color: #fff;
-  clip-path: path('m 0 0 l 96 0 c -48 0 -48 48 -96 48');
-}
 
 .header-style-content{
   padding: 0rem 10%;
-  display: flex;
-  align-items: center;
+
 }
 
 .header-style-title{
-  width: 80%;
-  color: #FFF;
+  width: 100%;
+  
 }
 
 .header-style-image{
   width: 100%;
+  padding-bottom: 2rem;
+  padding-top: 4rem;
 }
 
 .custom-shape-divider-bottom-1666903128 {
@@ -280,13 +452,69 @@ nav .nav-button {
   position: relative;
   display: block;
   width: calc(135% + 1.3px);
-  height: 150px;
+  height: 70px;
 }
 
 .custom-shape-divider-bottom-1666903128 .shape-fill {
   fill: #FFFFFF;
 }
 
+
+@media screen and (min-width: 630px){
+
+  .header-style{
+    margin-top: -4.2rem;
+
+  }
+
+  .vervoerregio-path-box{
+    height: 50px;
+}
+
+.responsive-width{
+  width: 5%;
+}
+
+.logo-width{
+  width: 7rem;
+}
+.custom-shape-divider-bottom-1666903128 svg {
+  height: 150px;
+}
+
+.header-style-title{
+  padding-top: 2rem;
+}
+
+
+}
+
+@media screen and (min-width: 1000px){
+
+  .responsive-width{
+    width: 10%;
+  }
+  
+  .logo-width{
+    width: 14rem;
+  }
+
+  .header-style-content{
+  
+    display: flex;
+    gap: 4rem;
+  }
+
+  .header-style-title{
+  }
+}
+  @media screen and (min-width: 1400px){
+  .header-style-title{
+    padding-top: 5rem;
+  }
+
+
+}
 
 /* second header*/
 
@@ -303,32 +531,7 @@ nav .nav-button {
   background: linear-gradient(332deg, rgba(185,0,95,1) 0%, rgba(227,0,89,1) 100%);
 }
 
-/* crumb */
-
-.breadcrumbs{
-  margin: 0rem 10%;
-
-}
-
-ul.crumb li {
-  margin: 2rem 0;
-  display: inline;
-  font-size: 1rem;
-  font-weight: 500;
-}
-
-ul.crumb li+li:before {
-  padding: 8px;
-  content: "/\00a0";
-
-}
-
-ul.crumb a {
-  color: #0b5086;
-  text-decoration: underline;
-}
-
-/* body */
+/* main */
 
 main {
   margin: 0rem 10%;
@@ -337,27 +540,32 @@ main {
 }
 
 .title{
+  padding: 2rem 0;
 }
+
 
 .informatie{
   display: flex;
-  
+  flex-wrap: wrap;
   gap: 2.5rem;
-
+  padding-top: 2rem;
+  
 }
 
 .informatie-box{
   width: 100%;
-  height: auto;
-  margin: 3rem 0;
   color: black;
   text-decoration: none;
-
-  padding: 2rem;
+  padding: 1rem 2rem;
   box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   cursor: pointer;
+
 }
+
+
+
+
 
 
 .informatie-box:hover{
@@ -367,25 +575,22 @@ main {
 
 .informatie-box img{
   width: 100%;
-  height: 16rem;
-}
-
-.informatie h3{
 }
 
 .checklist-box{
 
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 2.5rem;
   color: black;
   text-decoration: none;
 
-  margin: 3rem 0;
-  padding: 2rem;
+  padding: 1rem 2rem;
   box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   cursor: pointer;
+
 }
 
 .checklist-box:hover{
@@ -435,6 +640,37 @@ main {
 }
 
 
+@media screen and (min-width: 600px){
+  .informatie{
+    flex-wrap: nowrap;
+    overflow: auto;
+    padding: 2rem 1rem;
+  }
+
+  .informatie-box{
+    min-width: 250px;
+
+  }
+
+  .informatie-box img{
+    height: 200px;
+  }
+
+}
+
+@media screen and (min-width: 1500px){
+  .informatie-box img{
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 1000px){
+
+.checklist-box{
+  flex-wrap: nowrap;
+
+}
+}
 /* details summery */
 
 details {
@@ -543,14 +779,24 @@ footer{
   margin-top: 3rem;
   padding-top: 6rem;
   display: flex;
+  flex-wrap: wrap;
   gap: 2.5rem;
   padding-bottom: 2rem;;
 
 }
 
-.regio-logo, .contact, .footer-bericht{
+.regio-logo{
+  display: none;
+} 
+
+.contact{
   width: 100%;
 }
+
+.footer-bericht{
+  width: 200%;
+}
+
 
 .vervoerregio-path-box-footer{
   width: 100%;
@@ -569,7 +815,7 @@ footer{
 }
 
 .width-footer{
-  width: 50%;
+  width: 40%;
   height: 3rem;
   background-color: #fff;
 }
@@ -653,4 +899,25 @@ input[type=submit]:hover {
 .sub-footer{
   height: 3rem;
   background-color: #fff;
+}
+
+@media screen and (min-width: 600px){
+  .footer-content{
+  flex-wrap: nowrap;
+  }
+
+  
+
+}
+
+@media screen and (min-width: 1000px){
+
+.regio-logo{
+  display: block;
+  width: 100%;
+} 
+.regio-logo img{
+  max-height: 400px;
+  width: 100%;
+}
 }
